@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python pdf_merger_gui.py:*)",
+      "Bash(pip install:*)",
+      "Bash(pyinstaller:*)",
+      "Bash(\"./증빙자료_취합_프로그램_v6.0.exe\")",
+      "Read(//c/Users/UOU/OneDrive - UOU (1)/01_개인/Claude AI/projects_window/**)",
+      "Bash(ls:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(unzip:*)",
+      "Read(//c/Users/UOU/OneDrive - UOU (1)/01_개인/Claude AI/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
