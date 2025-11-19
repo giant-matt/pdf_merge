@@ -13,9 +13,23 @@ import pythoncom
 class PdfMergerApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("증빙자료 취합 프로그램")
+        self.root.title("PDF 변환 & 취합 프로그램")
         self.root.geometry("750x750")
         self.root.resizable(True, True)
+
+        # 아이콘 설정
+        try:
+            import sys
+            if getattr(sys, 'frozen', False):
+                # PyInstaller로 빌드된 경우
+                base_path = sys._MEIPASS
+            else:
+                # 개발 환경
+                base_path = os.path.dirname(os.path.abspath(__file__))
+            icon_path = os.path.join(base_path, 'assests', 'pdf_merge_icon.ico')
+            self.root.iconbitmap(icon_path)
+        except:
+            pass
 
         # 심플하고 조화로운 컬러 팔레트
         self.colors = {
@@ -74,7 +88,7 @@ class PdfMergerApp:
         # 타이틀
         title_label = tk.Label(
             main_container,
-            text="증빙자료 취합 프로그램",
+            text="PDF 변환 & 취합 프로그램",
             font=self.fonts['title'],
             fg=self.colors['text'],
             bg=self.colors['bg']
@@ -259,7 +273,7 @@ class PdfMergerApp:
         self.file_listbox = Listbox(
             listbox_frame,
             selectmode=tk.SINGLE,
-            font=self.fonts['body'],
+            font=self.fonts['heading'],
             bg='#F8F9FA',
             fg=self.colors['text'],
             relief=tk.FLAT,

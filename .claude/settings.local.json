@@ -9,7 +9,9 @@
       "Bash(ls:*)",
       "Bash(powershell -Command:*)",
       "Bash(unzip:*)",
-      "Read(//c/Users/UOU/OneDrive - UOU (1)/01_개인/Claude AI/**)"
+      "Read(//c/Users/UOU/OneDrive - UOU (1)/01_개인/Claude AI/**)",
+      "Bash(d:\\PROJECT\\projects_window\\pdf_merge\\venv\\Scripts\\pip install:*)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []

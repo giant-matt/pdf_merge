@@ -1,0 +1,15 @@
+# 파이썬 필수 제외
+__pycache__/
+*.pyc
+
+# 가상환경 (용량 큼)
+venv/
+.env
+
+# PDF 병합 결과물 (소스코드가 아님)
+output/
+merged_*.pdf
+
+# 로그 파일
+logs/
+*.log
